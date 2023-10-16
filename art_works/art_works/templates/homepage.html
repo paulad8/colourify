@@ -1,0 +1,52 @@
+﻿{% extends "base.html" %}
+{% load static %}
+<body>
+    <main>
+        <section class="masthead">
+            {% block content %}
+
+            
+            <div class="d-flex justify-content-center flex-column">
+                <header>
+
+                    <h1>ART SPACE</h1>
+
+                    <h4>Find inspiration by browsing works from selected artists across the centuries</h4>
+
+                </header>
+
+                <!-- Search box -->
+
+                <div class="col-md-6 col-lg-6 col-11 mx-auto mt-3 search-box">
+
+                    <div class="input-group form-container">
+
+                        <input type="text" name="search" class="form-control search-input" placeholder="Search by artist, movement, region or medium" autofocus="autofocus" autocomplete="off" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary">
+                                <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff;"></i>
+                            </button>
+
+                        </span>
+
+                    </div>
+
+
+
+                </div>
+
+                <!-- div class="d-flex flex-column mt-3">
+                    <form role="search" method="get" >
+                        <input class="form-control" type="search" placeholder="Search by artist, movement, region or medium" aria-label="Search" />
+                        <button class="btn btn-primary mt-3" type="submit">Search</button>
+                    </form>
+                </ div -->
+
+
+            </div>
+            
+            {% endblock %}
+        </section>
+    </main>
+
+</body>
